@@ -5,9 +5,9 @@
 
 class Author {
   constructor(name, email, gender) {
-    this._name = name;
-    this._email = email;
-    this._gender= gender;
+    this.name = name;
+    this.email = email;
+    this.gender= gender;
   }
   get name() {
     return this._name;
@@ -37,10 +37,10 @@ class Author {
 
 class Book {
   constructor(data) {
-    this._title = data.title;
-    this._author = data.author;
-    this._price = data.price;
-    this._quantity = data.quantity;
+    this.title = data.title;
+    this.author = data.author;
+    this.price = data.price;
+    this.quantity = data.quantity;
   }
   get title() {
     return this._title
@@ -93,9 +93,9 @@ const bookData = {
 
 class Account {
   constructor(id, name, balance) {
-    this._id = id;
-    this._name = name;
-    this._balance = balance;
+    this.id = id;
+    this.name = name;
+    this.balance = balance;
   }
 
   get id() {
@@ -158,10 +158,10 @@ class Account {
 
 class Person {
   constructor(data) {
-    this._firstName = data.firstName;
-    this._lastName = data.lastName;
-    this._gender = data.gender;
-    this._age = data.age;
+    this.firstName = data.firstName;
+    this.lastName = data.lastName;
+    this.gender = data.gender;
+    this.age = data.age;
   }
 
   get firstName() {
@@ -208,10 +208,10 @@ const person = new Person({
 class Student extends Person {
   constructor (data) {
     super(data);
-    this._program = data.program;
-    this._year = data.year;
-    this._fee = data.fee;
-    this._exams = {}
+    this.program = data.program;
+    this.year = data.year;
+    this.fee = data.fee;
+    this.exams = {}
   }
 
   get program() {
@@ -269,8 +269,8 @@ const student = new Student({
 class Teacher extends Person {
   constructor(data) {
     super(data)
-    this._program = data.program;
-    this._pay = data.pay;
+    this.program = data.program;
+    this.pay = data.pay;
   }
 
   get program() {
